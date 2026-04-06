@@ -1,1 +1,29 @@
+name: Deploy to Netlify
 
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build site
+        run: npm run build
+      
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3
+        with:
+          publish-dir: './build' # O './public' según tu proyecto
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_AUTH_TOKEN: nfp_774ymwCwMbaM1nfDQe7BR6SjXRHjZaTp679e
+          NETLIFY_SITE_ID: 196ff171-a5aa-4aa9-91d1-3e3880ccbde1
+        timeout-minutes: 10   
