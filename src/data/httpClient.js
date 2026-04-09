@@ -1,21 +1,17 @@
-const API_KEY = import.meta.env.VITE_TMDB_API_KEY;  
-const BASE_URL = 'https://api.themoviedb.org/';    
+const API_BASE_URL = "https://api.themoviedb.org/3";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
-export const fetchMovies = async (query) => {
-  try {
-    const response = await fetch(
-      `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${query}`
-    );
-
-    if (!response.ok) {
-      throw new Error('Error al buscar películas');  
-    }
-
-    const data = await response.json();
-    return data.results;
-
-  } catch (error) {
-    console.error('Error al buscar películas:', error);  
-    return [];
+export async function get(path) {
+  const url = `${API_BASE_URL}${path}${path.includes("?") ? "&" :
+    "?"}api_key=${API_KEY}&language=es-MX`;
+  
+  const response = await fetch(url, {
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+  });
+  if (!response.ok) {
+    throw new Error("Error en la solicitud: " + response.status);
   }
-};
+    return response.json();
+}
