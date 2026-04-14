@@ -32,10 +32,11 @@ npm run dev / pnpm dev
 - /src -> pages -> landing
 ## Despliegue
 - Github: https://github.com/lauracarbajal1403/Practica-7.git
-- Netlify: https://timely-sprite-aa210c.netlify.app/
+- Netlify:[ https://timely-sprite-aa210c.netlify.app/](https://tourmaline-capybara-84cb9c.netlify.app/)
 ## Conclusiones
 - Laura: 
-- El uso de React 
+- A lo largo de esta práctica logramos comprender cómo utilizar git en un proyecto en equipo, además de diversificar nuestro conocimiento de desarrollo web   al utilizar un lenguaje nuevo.
+- Considero que esta práctica fue fundamental para nuestro aprendizaje debido a que logramos utilizar un lenguaje y una tecnología demandada en el mercado.
 - 
 - Antonio:
 - Así como practicamente cada lección que he tenido en esta materia, es mi primer contacto con lo que se vió en esta tarea/proyecto, seguir el video fue sencillo pero con la experiencia de las previas tareas también entendía lo que sucedía, y entiendo la utilidad de React y porque es tan famosa, ofrece muchos beneficios en su rehusabilidad
