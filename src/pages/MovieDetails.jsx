@@ -10,7 +10,7 @@ export function MovieDetails(){
     useEffect(()=>{
         get("/movie/"+movieId).then((data)=>{
             setMovie(data)
-            setGeneros(data.genres[0])
+            setGeneros(data.genres)
         })
     }, [movieId])
 
@@ -23,8 +23,10 @@ export function MovieDetails(){
                 {movie.title}
             </p>
             <p>
-                <strong>Genero: </strong>
-                {generos.name}
+                <strong>Generos: </strong>
+                {generos.map((genero) => (
+                        <span key={genero.id}>{genero.name} </span>
+                    ))}
             </p>
             <p>
                 <strong>Descripcion: </strong>
