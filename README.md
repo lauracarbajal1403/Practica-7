@@ -37,3 +37,5 @@ npm run dev / pnpm dev
 - Laura: 
 - El uso de React 
 - 
+- Antonio:
+- Así como practicamente cada lección que he tenido en esta materia, es mi primer contacto con lo que se vió en esta tarea/proyecto, seguir el video fue sencillo pero con la experiencia de las previas tareas también entendía lo que sucedía, y entiendo la utilidad de React y porque es tan famosa, ofrece muchos beneficios en su rehusabilidad
