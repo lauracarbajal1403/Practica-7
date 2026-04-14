@@ -14,7 +14,7 @@ export function ContextMovieCard(){
 
         return(<ul className="container">
             {movies.map((movie)=>(
-                <MovieCard movie={movie}/>
+                <MovieCard key={movie.id} movie={movie}/>
             ))}
         </ul>);
 }

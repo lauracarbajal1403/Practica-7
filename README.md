@@ -23,7 +23,7 @@ trabajada colaborativamente mediante GitHub y publicada en Netlify.
 - VITE_TMDB_API_KEY = 9d0b34111af28224d36f96f3e08d6a39
 -
 ## Instalación y ejecución local
-npm install / pnpm build
+npm install / pnpm build /
 npm run dev / pnpm dev
 ## Rutas
 - /.github/workflows -> despliega en netlify al hacer push
