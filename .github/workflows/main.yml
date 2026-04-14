@@ -25,6 +25,6 @@ jobs:
           production-branch: main
           github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
-          NETLIFY_AUTH_TOKEN: nfp_774ymwCwMbaM1nfDQe7BR6SjXRHjZaTp679e
+          NETLIFY_AUTH_TOKEN: ${{ secrets.secreto }}
           NETLIFY_SITE_ID: 196ff171-a5aa-4aa9-91d1-3e3880ccbde1
         timeout-minutes: 10   
