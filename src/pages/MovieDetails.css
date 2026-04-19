@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+
+.detailsContainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1500px;  
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+.movieImage {
+    border-radius: 15px ;
+}
+
+.movieTitle {
+    padding: 20px;
+    font-size: 3rem;
+    color: #02deff;
+    font-weight: bolder;
+}
+
+.movieDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+strong {
+    color: #989898;
+}
+
+@media (max-width: 768px) {
+    .detailsContainer {
+        flex-direction: column;
+        text-align: center;     
+        gap: 20px;              
+        padding: 20px;
+    }
+    .movieImage, .movieDetails {
+        width: 100%;            
+        max-width: 400px;       
+    }
+    .movieDetails {
+        align-items: center; 
+    }
+}

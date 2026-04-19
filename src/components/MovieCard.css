@@ -7,8 +7,17 @@
 
 .movieCard:hover{
     opacity: 0.5;
-    transform: traslateY(-30px);
+    transform: translateY(-30px);
     transition:0.5s;
+}
+
+.movieImage {
+    border-radius: 10px;
+}
+
+.movieLink {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media (max-width: 560px) {

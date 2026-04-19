@@ -5,7 +5,7 @@ export function MovieCard({movie}){
 
     return(
     <li className="movieCard">
-        <Link to={"/movies/"+movie.id}>
+        <Link to={"/movies/"+movie.id} className="movieLink">
             <img width={230}
             height={345}
             src={imageUrl}
